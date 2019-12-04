@@ -1,0 +1,5 @@
+systemctl enable firewalld
+systemctl start firewalld
+systemctl-cmd --add-service=http --permanent
+systemctl-cmd --add-service=https --permanent
+systemctl restart firewalld
